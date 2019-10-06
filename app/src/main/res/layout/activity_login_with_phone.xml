@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginWithPhone">
+
+    <TextView
+        android:id="@+id/verify_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Verify your phone number "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="24sp"
+        android:textSize="25sp"
+        android:textColor="#128C7E"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/rulessending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/verify_number_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="WhatsApp will send an SMS message (carrier \n charges may apply) to verify your phone number. \n Enter your country code and phone number:"
+        android:textSize="17sp"
+        android:textColor="#585555"
+        android:layout_marginTop="24sp"
+        />
+
+        <com.hbb20.CountryCodePicker
+
+            android:id="@+id/Countery_code"
+            android:layout_height="70sp"
+            android:layout_width="130sp"
+            app:layout_constraintTop_toBottomOf="@+id/rulessending"
+            app:layout_constraintStart_toStartOf="parent"
+            app:ccp_defaultNameCode="US"
+            app:ccp_arrowColor="#25D366"
+            android:layout_marginTop="33sp"
+            android:layout_marginLeft="24sp"
+            android:layout_marginRight="24sp"
+
+            />
+
+            <EditText
+                android:backgroundTint="#149443"
+                android:id="@+id/Phone_number"
+                android:layout_width="240sp"
+                android:layout_height="50sp"
+                android:hint=" Phone Number"
+                app:layout_constraintTop_toBottomOf="@+id/rulessending"
+                app:layout_constraintStart_toEndOf="@+id/Countery_code"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:layout_marginTop="24sp"
+
+                />
+
+                <Button
+                    android:id="@+id/Next_btn"
+                    android:layout_width="65sp"
+                    android:layout_height="30sp"
+                    android:text="NEXT"
+                    android:textColor="#FFFF"
+                    android:background="#25D366"
+                    app:layout_constraintTop_toBottomOf="@+id/Phone_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="370sp"
+                    android:shadowRadius="@integer/google_play_services_version"
+
+                    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
