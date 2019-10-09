@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="350sp"
-    android:layout_height="290sp"
+    android:orientation="vertical" android:layout_width="370sp"
+    android:layout_height="300sp"
     android:layout_gravity="center"
+
     >
 
     <TextView
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-    <Button
+    <TextView
         android:id="@+id/edit_choice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,6 +56,8 @@
         android:text="OK"
         android:textColor="#128C7E"
         android:layout_marginTop="16sp"
+        android:layout_marginLeft="250sp"
+
 
         />
     </LinearLayout>
